@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/Raleway-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="../alle_seiten/style.css">
+    <link rel="stylesheet" href="../alle_seiten/header.css">
+    <link rel="stylesheet" href="../alle_seiten/footer.css">
+    <link rel="stylesheet" href="./kontakt.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo_small_white.png">
+    
+
+    
+    <title>Kontakt</title>
+</head>
+
+<body id="body_kontakt">
+
+    <div id="blur">
+
+        
+
+        <header class="header">
+
+            <a href="../index.html">
+            <img class="header_logo" src="../img/logo.png" alt="Kochwelt Logo">
+            </a>
+
+            <nav class="nav">
+
+                <a class="navlink" href="../index.html">
+                Start
+                </a>
+
+                <a class="navlink" href="../rezept-des_tages/rezept_des_tages.html">
+                Rezept des Tages
+                </a>
+
+                <a class="navlink_kontakt" href="#">
+                Kontakt
+                </a>
+
+                <a class="navlink" href="#">
+                Impressum
+                </a>
+
+            </nav>
+
+
+
+        </header>
+        
+
+        <div class="kontaktseite" id="after_confirm">
+
+            
+       
+
+            <form onsubmit="sendMail(event)" class="kontaktformular">
+
+            
+
+                <h2>
+                    Kontaktiere uns
+                </h2>  
+
+            
+                <label  class="beschriftung_eingabefeld">
+                Dein Name:
+            
+                    <input required class="eingabefeld_klein" type="text" name="Kontakt Kochwelt">
+
+                </label>
+
+
+                <label class="beschriftung_eingabefeld">
+                    Deine E-Mail:
+
+                    <input required class="eingabefeld_klein" type="email" name="Kontakt Kochwelt">
+
+                </label>
+
+
+                <label class="beschriftung_eingabefeld">
+                    Deine Nachricht:
+
+                    <textarea required class="eingabefeld_groß" name="Kontakt Kochwelt"></textarea>
+
+                </label>
+
+                <div class="button_position">
+                
+                    <button class="button" type="submit"> 
+                    Abschicken
+                    </button> 
+
+                </div>
+
+
+            </form>
+                         
+        
+                   
+                     
+                        
+
+        </div>        
+
+            <div id="lückenfüller"></div>
+                 
+
+                <footer id="footer" class="footer"> 
+                    
+                    
+
+                        <img class="footer_logo_links" src="../img/logo_white.png" alt="Logo Kochwelt">
+            
+                    
+            
+            
+                    <div class="footer_logo_rechts">
+            
+                        <a class="link_footer_logo_rechts" 
+                            href="https://www.facebook.com/">
+                            <img class="img_footer_logo_rechts" 
+                                src="../img/facebook_logo.png" 
+                                alt="Facebook">
+                        </a>
+            
+                        <a class="link_footer_logo_rechts" 
+                            href="https://www.instagram.com/accounts/login/?hl=de">
+                            <img class="img_footer_logo_rechts" 
+                                src="../img/instagram_logo.png" 
+                                alt="Instagram">
+                        </a>
+            
+                        <a class="link_footer_logo_rechts" 
+                        href="https://x.com/">
+                        <img class="img_footer_logo_rechts" 
+                            src="../img/x_logo.png" 
+                            alt="X">
+                    </a>
+            
+                    
+            
+            
+                    
+                </footer>
+
+    </div>    
+
+            <div class="bestätigung d_none" id="confirmation">
+
+                <form onsubmit="sendMail(event)" class="kontaktformular bestätigung_formular">
+
+            
+
+                    <h2 class="h2_bestätigung">
+                        Vielen Dank für Ihre Kontaktaufnahme!
+                    </h2>
+
+                    <p class="p_bestätigung">Ihr Anliegen wurde erfolgreich weitergeleitet. <br>
+                                            Es wird sich ehestmöglich jemand bei Ihnen melden. </p>
+
+        
+                    <div class="button_position">
+            
+                        <a class="button button_bestätigung" href="../index.html">
+                            zur Startseite
+                        </a>
+                                           
+                    </div>
+                            
+                            
+                </form>
+                            
+                            
+            </div>
+
+
+</body>
+
+    <script src="script.js"></script>   
+
+</html>

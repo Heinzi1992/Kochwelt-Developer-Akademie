@@ -1,0 +1,51 @@
+
+.rezept_des_tages_hauptseite {
+
+    display: flex;
+    padding: 100px 200px;
+
+
+}
+
+.img_rdt_hauptseite {
+
+    width: 550px;
+    border-radius: 10px;
+
+}
+
+.beschreibung_rdt_hauptseite {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 50px;
+
+}
+
+.text_rdt_hauptseite {
+
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.7);
+
+
+}
+
+.link_rezept_oeffnen {
+
+    text-decoration: none;
+    color: white;
+    background-color: #008001;
+    padding: 15px 70px;
+    width: fit-content;
+    margin-top: 90px;
+    border-radius: 10px;
+
+
+}
+
+.link_rezept_oeffnen:hover {
+
+    filter: drop-shadow(0 0 4px #008001);
+
+}

@@ -1,0 +1,95 @@
+
+.lust_auf_was_neues {
+
+    background-color: rgba(239, 239, 239, 1);
+    text-align: center;
+    padding: 50px 13vw 100px 13vw;
+
+}
+
+.alle_links_von_neues_rezept {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+
+}
+
+.img_rezepte_links_neues_rezept {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img_neues_rezept {
+
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+
+}
+
+.container_neues_rezept {
+
+    position: relative;
+}
+
+.overlay_neues_rezept {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(239, 239, 239, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .container_neues_rezept:hover .overlay_neues_rezept {
+
+    height: 100%;
+
+  }
+
+  .text_overlay_neues_rezept {
+    white-space: nowrap; 
+    background-color: #008001;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 10px 20px;
+  }
+
+  .link_overlay_neues_rezept {
+
+    text-decoration: none;
+    color: white;
+    
+    font-size: 24px;
+
+  }
+
+  .link_neues_rezept {
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+
+  }
+
+  .link_neues_rezept:hover {
+
+    color: #008001;
+    text-decoration: underline;
+    
+
+  }
+  

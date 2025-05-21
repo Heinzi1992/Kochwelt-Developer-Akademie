@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../alle_seiten/style.css">
+    <link rel="stylesheet" href="../alle_seiten/header.css">
+    <link rel="stylesheet" href="../alle_seiten/footer.css">
+    <link rel="stylesheet" href="rezept_des_tages.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo_small_white.png">
+    <script src="./rezept_des_tages.js"></script>
+
+
+    <title>Rezept des Tages</title>
+</head>
+<body onload="multiply()">
+    
+    <header class="header">
+
+        <a href="../index.html">
+            <img class="header_logo" src="../img/logo.png" alt="Kochwelt Logo">
+        </a>
+
+        <nav class="nav">
+
+            <a class="navlink" href="../index.html">
+                Start
+            </a>
+
+            <a class="navlink_rdt" href="../rezept-des_tages/rezept_des_tages.html">
+                Rezept des Tages
+            </a>
+
+            <a class="navlink" href="../kontakt/kontakt.html">
+                Kontakt
+            </a>
+
+            <a class="navlink" href="#">
+                Impressum
+            </a>
+
+        </nav>
+
+
+
+    </header>
+    <!----------------------- Content ---------------------->
+
+    <section class="content_rdt">
+
+        <h2 class="h2_rezept_des_tages">Klassisches Wiener Schnitzel</h2>
+
+        <img class="img_rezept_des_tages" src="../img/wiener_schnitzel.jpg" alt="Wiener Schnitzel mit Erdäpfelsalat">
+
+        <div class="zubereitung">
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                <p class="zubereitung_einzeln_werte">30min</p>
+
+            </div>
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad Zubereitung">
+
+                <p class="zubereitung_einzeln_werte">einfach</p>
+
+            </div>
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/calendar-alt-regular.svg" alt="Rezept verfügbar seit">
+
+                <p class="zubereitung_einzeln_werte">19.05.2025</p>
+
+            </div>
+
+        
+        </div>
+
+        <form method="dialog" onsubmit="multiply()" class="menge_gesamt">
+
+            <label for="Menge">
+                Zutaten für
+            </label>
+
+            <input required class="eingabe_menge" type="number" min="1" max="8" step="1" id="menge" value="4">
+
+            <button type="submit" class="button button_menge" 
+             > Portionen</button>
+
+        </form>
+
+
+        <table class="zutaten_tabelle">
+
+            <tr>
+
+                <td id="menge_ausgabe1">1</td>
+                <td class="breite_tabelle_mitte">Stück</td>
+                <td class="zutat">Kalbsschnitzel (à 160g)</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe2">1</td>
+                <td>Prise(n)</td>
+                <td class="zutat">Salz</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe3">40</td>
+                <td>g</td>
+                <td class="zutat">Mehl (griffig)</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe4">0.5</td>
+                <td>Stück</td>
+                <td class="zutat">Eier</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe5">75</td>
+                <td>g</td>
+                <td class="zutat">Semmelbrösel</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe6">1/4</td>
+                <td>Packung(en)</td>
+                <td class="zutat">Butterschmalz</td>
+
+            </tr>
+
+            <tr>
+
+                <td id="menge_ausgabe7">1/4</td>
+                <td>Stück</td>
+                <td class="zutat">Zitrone</td>
+
+            </tr>
+
+        </table>
+
+        <h2>Zubereitung</h2>
+
+        <div class="zubereitung_arbeit">
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                <p class="zubereitung_einzeln_werte">30min Gesamtzeit</p>
+
+            </div>
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                <p class="zubereitung_einzeln_werte">10min Zubereitungszeit</p>
+
+            </div>
+
+            <div class="zubereitung_einzeln">
+
+                <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                <p class="zubereitung_einzeln_werte">20min Koch & Ruhezeit</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="zubereitung_beschreibung_gesamt">
+
+            <div class="zubereitungsschritt">
+
+                <section class="arbeitsschritt" >1</section>
+
+                <p class="arbeitsbeschreibung">
+                    Zuerst die Schnitzel zwischen Frischhaltefolie behutsam klopfen. <br>
+                    Fleisch nun beidseitig salzen, in Mehl wenden, abklopfen, durch <br>
+                    die Eier ziehen und in den Bröseln wenden.
+                </p>
+
+            </div>
+
+            <div class="zubereitungsschritt">
+
+                <section class="arbeitsschritt" >2</section>
+
+                <p class="arbeitsbeschreibung">
+                    Dann die Schnitzel ca. 2 Finger hoch in Backfett goldgelb backen. <br>
+                    Während des Backens die Pfanne ein wenig rütteln, damit die Schnitzel <br>
+                    gleichmäßig goldbraun werden. Schnitzel herausheben, <br>
+                    auf Küchenpapier abtropfen lassen.
+                </p>
+
+            </div>
+
+            <div class="zubereitungsschritt">
+
+                <section class="arbeitsschritt" >3</section>
+
+                <p class="arbeitsbeschreibung">
+                    Zum Schluss die gewaschene Zitrone in Spalten schneiden <br>
+                    und die fertigen Wiener Schnitzel mit Zitronenspalten garnieren.
+                </p>
+
+            </div>
+
+            
+        </div>
+
+        <div class="background">
+
+         <h2>Tipps zum Rezept</h2>
+
+            <p>
+                Das klassische Wiener Schnitzel wird mit Petersilkartoffeln oder Kartoffelsalat als Beilage serviert. <br><br>
+
+                Unbedingt auf eine ausreichende Menge Fett achten, damit das Schnitzel schwimmend gebacken wird. <br><br>
+
+                Bei der Verwendung von Ölen sind geschmacksneutrale Sorten wie Rapsöl, Maiskeimöl oder Sonnenblumenöl zu bevorzugen. <br><br>
+
+                Die Schnitzel sollen sofort nach dem Panieren ausgebacken werden, damit die Panade knusprig wird. <br><br>
+
+                Auch ein Schuss Mineralwasser sorgt bei den luftig aufgeschlagenen Eiern für mehr Fluffigkeit 
+                
+                in der Panade, d.h. es bilden sich mehr Luftpolster.
+
+            </p>
+
+        </div>
+
+            <h3>Rezept erstellt von</h3>
+
+            <div class="ich">
+
+                <img class="img_ich" src="../img/Bild.jpeg" alt="Bild vom Rezeptersteller">
+
+                <p class="mein_name">Heinzi</p>
+
+            </div>
+
+        
+
+    </section>
+
+
+    <!-----------------------Footer--------------------->
+    <footer class="footer">
+
+        
+
+            <img class="footer_logo_links" src="../img/logo_white.png" alt="Logo Kochwelt">
+
+        
+
+
+        <div class="footer_logo_rechts">
+
+            <a class="link_footer_logo_rechts" 
+                href="https://www.facebook.com/">
+                <img class="img_footer_logo_rechts" 
+                    src="../img/facebook_logo.png" 
+                    alt="Facebook">
+            </a>
+
+            <a class="link_footer_logo_rechts" 
+                href="https://www.instagram.com/accounts/login/?hl=de">
+                <img class="img_footer_logo_rechts" 
+                    src="../img/instagram_logo.png" 
+                    alt="Instagram">
+            </a>
+
+            <a class="link_footer_logo_rechts" 
+            href="https://x.com/">
+            <img class="img_footer_logo_rechts" 
+                src="../img/x_logo.png" 
+                alt="X">
+        </a>
+
+        
+        </div>
+
+    </footer>
+
+
+</body>
+
+    
+
+</html>

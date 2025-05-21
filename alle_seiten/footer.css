@@ -1,0 +1,45 @@
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #403b3b;
+    height: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+        
+}
+
+.footer_logo_links {
+
+   max-height: 100px;
+
+}
+
+.footer_logo_rechts {
+
+    display: flex;
+    gap: 25px;
+
+}
+
+.link_footer_logo_rechts {
+
+    text-decoration: none;
+    font-size: 0px;
+    
+}
+
+.img_footer_logo_rechts {
+
+    width: 56px;
+
+}
+
+.img_footer_logo_rechts:hover {
+
+    filter: drop-shadow(0 0px 5px white);
+    object-fit:fill;
+
+}
+
