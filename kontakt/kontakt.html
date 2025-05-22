@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../alle_seiten/header.css">
     <link rel="stylesheet" href="../alle_seiten/footer.css">
     <link rel="stylesheet" href="./kontakt.css">
+    <link rel="stylesheet" href="../alle_seiten/responsive_for_all.css">
+    
     <link rel="icon" type="image/x-icon" href="../img/logo_small_white.png">
     
 
@@ -19,134 +21,167 @@
 
     <div id="blur">
 
-        
+        <div class="all_content">
 
-        <header class="header">
+            <header class="header padding_sides5vw">
 
-            <a href="../index.html">
-            <img class="header_logo" src="../img/logo.png" alt="Kochwelt Logo">
-            </a>
+                <a href="index.html">
+                    <img class="header_logo d_none650" 
+                        src="../img/logo.png" alt="Kochwelt Logo">
 
-            <nav class="nav">
+                    <img class="header_logo_small d_none_over651" 
+                        src="../img/logo_small.png" alt="Logo Kochwelt">
+                </a>
+    
+                <nav class="nav d_none1250">
+    
+                    <a class="navlink" href="../index.html">
+                        Start
+                    </a>
+    
+                    <a class="navlink" href="../rezept-des_tages/rezept_des_tages.html">
+                        Rezept des Tages
+                    </a>
+    
+                    <a class="navlink navlink_kontakt" href="../kontakt/kontakt.html">
+                        Kontakt
+                    </a>
+    
+                    <a class="navlink" href="#">
+                        Impressum
+                    </a>
+    
+                </nav>
+    
+                <button onclick="openCloseMenu()" class="button menu_button d_none_over1251">
+                    Menü
+                </button>
+    
+            </header>
 
+            <div class="menu_box d_none_over1251 menu_box_closed" id="menu">
+
+                <button onclick="openCloseMenu()" class="button menu_button">Menü schließen</button>
+    
                 <a class="navlink" href="../index.html">
-                Start
+                    Start
                 </a>
-
+    
                 <a class="navlink" href="../rezept-des_tages/rezept_des_tages.html">
-                Rezept des Tages
+                    Rezept des Tages
                 </a>
-
-                <a class="navlink_kontakt" href="#">
-                Kontakt
+    
+                <a class="navlink" href="../kontakt/kontakt.html">
+                    Kontakt
                 </a>
-
+    
                 <a class="navlink" href="#">
-                Impressum
+                    Impressum
                 </a>
+    
+    
+            </div>
+            
 
-            </nav>
+            <div class="kontaktseite" id="after_confirm">
 
-
-
-        </header>
+                
         
 
-        <div class="kontaktseite" id="after_confirm">
+                <form onsubmit="sendMail(event)" class="kontaktformular">
 
-            
-       
-
-            <form onsubmit="sendMail(event)" class="kontaktformular">
-
-            
-
-                <h2>
-                    Kontaktiere uns
-                </h2>  
-
-            
-                <label  class="beschriftung_eingabefeld">
-                Dein Name:
-            
-                    <input required class="eingabefeld_klein" type="text" name="Kontakt Kochwelt">
-
-                </label>
-
-
-                <label class="beschriftung_eingabefeld">
-                    Deine E-Mail:
-
-                    <input required class="eingabefeld_klein" type="email" name="Kontakt Kochwelt">
-
-                </label>
-
-
-                <label class="beschriftung_eingabefeld">
-                    Deine Nachricht:
-
-                    <textarea required class="eingabefeld_groß" name="Kontakt Kochwelt"></textarea>
-
-                </label>
-
-                <div class="button_position">
                 
-                    <button class="button" type="submit"> 
-                    Abschicken
-                    </button> 
 
+                    <h2>
+                        Kontaktiere uns
+                    </h2>  
+
+                
+                    <label  class="beschriftung_eingabefeld">
+                    Dein Name:
+                
+                        <input required class="eingabefeld_klein" type="text" name="Kontakt Kochwelt">
+
+                    </label>
+
+
+                    <label class="beschriftung_eingabefeld">
+                        Deine E-Mail:
+
+                        <input required class="eingabefeld_klein" type="email" name="Kontakt Kochwelt">
+
+                    </label>
+
+
+                    <label class="beschriftung_eingabefeld">
+                        Deine Nachricht:
+
+                        <textarea required class="eingabefeld_groß" name="Kontakt Kochwelt"></textarea>
+
+                    </label>
+
+                    <div class="button_position">
+                    
+                        <button class="button" type="submit"> 
+                        Abschicken
+                        </button> 
+
+                    </div>
+
+
+                </form>
+                            
+            
+                    
+                        
+                            
+
+            </div>        
+
+                <div id="lückenfüller"></div>
+                    
+
+                <footer class="footer footer_hight padding_sides5vw">
+
+            
+
+                    <img class="footer_logo_links d_none650" 
+                        src="../img/logo_white.png" alt="Logo Kochwelt">
+
+                    <img class="footer_logo_links_small d_none_over651" 
+                        src="../img/logo_small_white.png" alt="Logo Kochwelt">
+                
+
+
+                <div class="footer_logo_rechts gap_mobile">
+
+                    <a class="link_footer_logo_rechts" 
+                        href="https://www.facebook.com/">
+                        <img class="img_footer_logo_rechts social_logo_width" 
+                            src="../img/facebook_logo.png" 
+                            alt="Facebook">
+                    </a>
+
+                    <a class="link_footer_logo_rechts" 
+                        href="https://www.instagram.com/accounts/login/?hl=de">
+                        <img class="img_footer_logo_rechts social_logo_width" 
+                            src="../img/instagram_logo.png" 
+                            alt="Instagram">
+                    </a>
+
+                    <a class="link_footer_logo_rechts" 
+                    href="https://x.com/">
+                    <img class="img_footer_logo_rechts social_logo_width" 
+                        src="../img/x_logo.png" 
+                        alt="X">
+                </a>
+
+                
                 </div>
 
+            </footer>
 
-            </form>
-                         
-        
-                   
-                     
-                        
-
-        </div>        
-
-            <div id="lückenfüller"></div>
-                 
-
-                <footer id="footer" class="footer"> 
-                    
-                    
-
-                        <img class="footer_logo_links" src="../img/logo_white.png" alt="Logo Kochwelt">
-            
-                    
-            
-            
-                    <div class="footer_logo_rechts">
-            
-                        <a class="link_footer_logo_rechts" 
-                            href="https://www.facebook.com/">
-                            <img class="img_footer_logo_rechts" 
-                                src="../img/facebook_logo.png" 
-                                alt="Facebook">
-                        </a>
-            
-                        <a class="link_footer_logo_rechts" 
-                            href="https://www.instagram.com/accounts/login/?hl=de">
-                            <img class="img_footer_logo_rechts" 
-                                src="../img/instagram_logo.png" 
-                                alt="Instagram">
-                        </a>
-            
-                        <a class="link_footer_logo_rechts" 
-                        href="https://x.com/">
-                        <img class="img_footer_logo_rechts" 
-                            src="../img/x_logo.png" 
-                            alt="X">
-                    </a>
-            
-                    
-            
-            
-                    
-                </footer>
+        </div>
 
     </div>    
 
@@ -157,7 +192,7 @@
             
 
                     <h2 class="h2_bestätigung">
-                        Vielen Dank für Ihre Kontaktaufnahme!
+                        Vielen Dank für Ihre Nachricht!
                     </h2>
 
                     <p class="p_bestätigung">Ihr Anliegen wurde erfolgreich weitergeleitet. <br>
@@ -181,6 +216,7 @@
 
 </body>
 
-    <script src="script.js"></script>   
+    <script src="script.js"></script> 
+    <script src="../alle_seiten/menu.js"></script>  
 
 </html>
