@@ -1,0 +1,30 @@
+
+.navlink_impressum {
+
+    color: #008001;
+    border-bottom: 6px solid #008001;
+    padding-bottom: 18px;
+    text-decoration: none;
+    
+
+}
+
+
+
+.impressum {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 70px 70px 150px 70px;
+    }
+
+
+.flex_impressum {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   min-height: calc(100vh - 350px); 
+
+}
+
