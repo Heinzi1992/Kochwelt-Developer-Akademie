@@ -127,6 +127,12 @@
 
     }
 
+    .lückenfüller_resp {
+
+        height: calc(100vh - 300px);
+    
+    }
+
 }
 
 /******************* Hauptseite ******************/

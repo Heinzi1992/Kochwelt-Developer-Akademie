@@ -1,11 +1,12 @@
 
-let ingredient1 = 12
-let ingredient2 = 1
-let ingredient3 = 40
-let ingredient4 = 1/2
-let ingredient5 = 75
+let ingredient1 = 2.5
+let ingredient2 = 3/4
+let ingredient3 = 3/4
+let ingredient4 = 187.5
+let ingredient5 = 1/4
 let ingredient6 = 1/4
-let ingredient7 = 1/4
+let ingredient7 = 1/2
+let ingredient8 = 1.25
 
 
 
@@ -32,6 +33,7 @@ function multiply() {
     document.getElementById('menge_ausgabe5').innerText = ingredient5 * x
     document.getElementById('menge_ausgabe6').innerText = ingredient6 * x
     document.getElementById('menge_ausgabe7').innerText = ingredient7 * x
+    document.getElementById('menge_ausgabe8').innerText = ingredient8 * x
 
 }
 
