@@ -1,4 +1,15 @@
 
+.navlink_start {
+
+  color: #008001;
+  border-bottom: 6px solid #008001;
+  padding-bottom: 18px;
+  text-decoration: none;
+  
+
+}
+
+
 .lust_auf_was_neues {
 
     background-color: rgba(239, 239, 239, 1);
@@ -91,4 +102,6 @@
     
 
   }
+
+
   
