@@ -1,0 +1,185 @@
+
+
+
+.content_rdt {
+
+    width: 100%;
+    padding: 100px 15vw;
+
+}
+
+.img_rezept_des_tages {
+
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 24px;
+    border-radius: 10px;
+
+}
+
+.zubereitung {
+
+    display: flex;
+    margin-top: 45px;
+    gap: 30px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #dcdcdc;
+
+}
+
+.zubereitung_einzeln {
+
+    display: flex;
+    gap: 16px;
+    background-color: #dcdcdc;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.zubereitung_img {
+
+    height: 24px;
+
+}
+
+.zubereitung_einzeln_werte {
+
+    margin: 0;
+
+}
+
+.menge_gesamt {
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.eingabe_menge {
+
+    height: 43px;
+    margin-left: 15px;
+    width: 70px;
+    font-size: 24px;
+
+}
+
+.button_menge{
+
+    margin: 0;
+    border-radius: 0;
+    padding: 10px 60px;
+
+}
+
+.zutaten_tabelle {
+
+    width: 100%;
+    line-height: 2em;
+    border-spacing: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+
+}
+
+.breite_tabelle_mitte {
+
+    width: 150px;
+
+}
+
+
+
+.zutat {
+
+    text-align: start;
+    padding-left: 40px;
+
+}
+
+.zubereitung_arbeit {
+
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+
+}
+
+.zubereitungsschritt {
+
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.zubereitung_beschreibung_gesamt {
+
+    margin-bottom: 40px;
+
+}
+
+.arbeitsschritt {
+
+    border: 1px solid #dcdcdc;
+    padding: 5px 10px;
+    height: fit-content;
+    
+}
+
+.arbeitsbeschreibung {
+
+    margin: 0 0 0 30px;
+
+}
+
+h3 {
+
+    margin-top: 60px;
+
+}
+
+.ich {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+
+.img_ich {
+
+    display: flex;
+    width: 100px;
+    
+}
+
+.mein_name {
+
+    font-size: 32px;
+
+}
+
+.background {
+
+    background-color: #dcdcdc;
+    padding: 10px 10px;
+
+}
+
+.backgroundcolor_td {
+
+    background-color: #dcdcdc;
+
+}
+
+
+
+
+

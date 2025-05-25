@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../alle_seiten/style.css">
+    <link rel="stylesheet" href="../alle_seiten/header.css">
+    <link rel="stylesheet" href="../alle_seiten/footer.css">
+    <link rel="stylesheet" href="./rezepte.css">
+    <link rel="stylesheet" href="../alle_seiten/responsive_for_all.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo_small_white.png">
+    
+    <title>Rezept 1</title>
+</head>
+<body onload="multiply()">
+
+    <div class="all_content">
+    
+        <header class="header padding_sides5vw">
+
+            <a href="../index.html">
+                <img class="header_logo d_none650" 
+                    src="../img/logo.png" alt="Kochwelt Logo">
+
+                <img class="header_logo_small d_none_over651" 
+                    src="../img/logo_small.png" alt="Logo Kochwelt">
+            </a>
+
+            <nav class="nav d_none1250">
+
+                <a class="navlink" href="../index.html">
+                    Start
+                </a>
+
+                <a class="navlink navlink_rdt" href="../rezept-des_tages/rezept_des_tages.html">
+                    Rezept des Tages
+                </a>
+
+                <a class="navlink" href="../kontakt/kontakt.html">
+                    Kontakt
+                </a>
+
+                <a class="navlink" href="../impressum/impressum.html">
+                    Impressum
+                </a>
+
+            </nav>
+
+            <button onclick="openCloseMenu()" class="button menu_button d_none_over1251">
+                Menü
+            </button>
+
+        </header>
+
+        <div class="menu_box d_none_over1251 menu_box_closed" id="menu">
+
+            <button onclick="openCloseMenu()" class="button menu_button">Menü schließen</button>
+
+            <a class="navlink" href="../index.html">
+                Start
+            </a>
+
+            <a class="navlink" href="../rezept-des_tages/rezept_des_tages.html">
+                Rezept des Tages
+            </a>
+
+            <a class="navlink" href="../kontakt/kontakt.html">
+                Kontakt
+            </a>
+
+            <a class="navlink" href="../impressum/impressum.html">
+                Impressum
+            </a>
+
+
+        </div>
+        <!----------------------- Content ---------------------->
+
+        <section class="content_rdt padding_sides_5">
+
+            <h2 class="h2_rezept_des_tages">Milchreis</h2>
+
+            <img class="img_rezept_des_tages" src="../img/rezept2_img.webp" alt="Milchreis">
+
+            <div class="zubereitung flex_column_675">
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                    <p class="zubereitung_einzeln_werte">30min</p>
+
+                </div>
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad Zubereitung">
+
+                    <p class="zubereitung_einzeln_werte">einfach</p>
+
+                </div>
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/calendar-alt-regular.svg" alt="Rezept verfügbar seit">
+
+                    <p class="zubereitung_einzeln_werte">19.05.2025</p>
+
+                </div>
+
+            
+            </div>
+
+            <form method="dialog" onsubmit="multiply()" class="menge_gesamt flex_column_675">
+
+                <label for="Menge">
+                    Zutaten für
+                </label>
+
+                <input required class="eingabe_menge width_205_at_675" type="number" min="1" max="8" step="1" id="menge" value="4">
+
+                <button type="submit" class="button button_menge" 
+                > Portionen</button>
+
+            </form>
+
+
+            <table class="zutaten_tabelle">
+
+                <tr class="backgroundcolor_td">
+
+                    <td class="text_start" id="menge_ausgabe1"></td>
+                    <td class="breite_tabelle_mitte text_start width_td_100">Liter</td> 
+                    <td class="zutat d_none_1000">Milch</td>
+
+                </tr>
+
+                <tr class="table_break backgroundcolor_td">
+
+                    <td colspan="2" class="zutat_resp d_none_over_1001 width_td_resp">Milch</td>
+
+                </tr>
+                
+                <tr>
+
+                    <td class="text_start" id="menge_ausgabe2"></td>
+                    <td class="text_start width_td_100">Prise (n)</td>
+                    <td class="zutat d_none_1000">Salz</td>
+
+                </tr>
+
+                <tr class="table_break">
+
+                    <td colspan="2" class="zutat_resp d_none_over_1001 width_td_resp">Salz</td>
+
+                </tr>
+
+                <tr class="backgroundcolor_td">
+
+                    <td class="text_start" id="menge_ausgabe3"></td>
+                    <td class="text_start width_td_100">Esslöffel</td>
+                    <td class="zutat d_none_1000">Zucker</td>
+
+                </tr>
+
+                <tr class="table_break backgroundcolor_td">
+
+                    <td colspan="2" class="zutat_resp d_none_over_1001 width_td_resp">Zucker</td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="text_start" id="menge_ausgabe4"></td>
+                    <td class="text_start width_td_100">Packung (en)</td>
+                    <td class="zutat d_none_1000">Vanillezucker</td>
+
+                </tr>
+
+                <tr class="table_break">
+
+                    <td colspan="2" class="zutat_resp d_none_over_1001 width_td_resp">Vanillezucker</td>
+
+                </tr>
+
+                <tr class="backgroundcolor_td">
+
+                    <td class="text_start" id="menge_ausgabe5"></td>
+                    <td class="text_start width_td_100">g</td>
+                    <td class="zutat d_none_1000">Rundkornreis</td>
+
+                </tr>
+
+                <tr class="table_break backgroundcolor_td">
+
+                    <td colspan="2" class="zutat_resp d_none_over_1001 width_td_resp">Rundkornreis</td>
+
+                </tr>
+
+                
+
+            </table>
+
+            <h2 class="text_center_855">Zubereitung</h2>
+
+            <div class="zubereitung_arbeit flex_column_855">
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                    <p class="zubereitung_einzeln_werte">30min Gesamtzeit</p>
+
+                </div>
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                    <p class="zubereitung_einzeln_werte">10min Zubereitungszeit</p>
+
+                </div>
+
+                <div class="zubereitung_einzeln">
+
+                    <img class="zubereitung_img" src="../img/icons/clock-regular.svg" alt="Zubereitungszeit">
+
+                    <p class="zubereitung_einzeln_werte">20min Koch & Ruhezeit</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="zubereitung_beschreibung_gesamt">
+
+                <div class="zubereitungsschritt flex_column_855">
+
+                    <section class="arbeitsschritt" >1</section>
+
+                    <p class="arbeitsbeschreibung margin_top_left">
+                        Als Erstes die Milch, Salz, Zucker und Vanillezucker in einem Topf 
+                        vermengen und bei bei niedriger Hitze kurz aufkochen lassen.
+                    </p>
+
+                </div>
+
+                <div class="zubereitungsschritt flex_column_855">
+
+                    <section class="arbeitsschritt" >2</section>
+
+                    <p class="arbeitsbeschreibung margin_top_left">
+                        Anschließend den Reis zur Milch hinzufügen und alles nochmal aufkochen lassen.
+                    </p>
+
+                </div>
+
+                <div class="zubereitungsschritt flex_column_855">
+
+                    <section class="arbeitsschritt" >3</section>
+
+                    <p class="arbeitsbeschreibung margin_top_left">
+                        Danach bei niedriger Hitze den Milchreis ca. 20 Minuten (mit halb aufgelegtem Deckel) 
+                        garen lassen, bis der Reis weich ist - dabei gelegentlich umrühren, damit nichts anbrennt.
+                    </p>
+
+                </div>
+
+                <div class="zubereitungsschritt flex_column_855">
+
+                    <section class="arbeitsschritt" >4</section>
+
+                    <p class="arbeitsbeschreibung margin_top_left">
+                        Je nach Geschmack mit Zucker, abgeriebener Zitronenschale oder Zimt bestreuen. 
+                        Wenn man es fruchtig mag, mit frischen Früchten der Saison garnieren.
+                    </p>
+
+                </div>
+
+                
+            </div>
+
+            <div class="background">
+
+            <h2>Tipps zum Rezept</h2>
+
+                <p>
+                    Falls der Reis zu fest ist, einfach etwas kalte Milch unterrühren. <br><br>
+
+                    Mit Zimt garnieren. Zum Milchreis schmeckt ebenfalls gut ein Apfelmus oder andere Fruchtzubereitungen dazu. <br><br>
+
+                    Der gekochte Milchreis wird auch als Grundlage für Tortenfüllungen oder süße Aufläufe verwendet. <br><br>
+
+                    In Dänemark, Schweden, Island, Finnland, Norwegen und auf den Färöern ist Milchreis Bestandteil des typischen Weihnachtsessens. 
+
+
+
+                </p>
+
+            </div>
+
+                <h3>Rezept erstellt von</h3>
+
+                <div class="ich">
+
+                    <img class="img_ich" src="../img/Bild.jpeg" alt="Bild vom Rezeptersteller">
+
+                    <p class="mein_name">Heinzi</p>
+
+                </div>
+
+            
+
+        </section>
+
+
+        <!-----------------------Footer--------------------->
+        <footer class="footer footer_hight padding_sides5vw">
+
+            
+
+            <img class="footer_logo_links d_none650" 
+                src="../img/logo_white.png" alt="Logo Kochwelt">
+
+            <img class="footer_logo_links_small d_none_over651" 
+                src="../img/logo_small_white.png" alt="Logo Kochwelt">
+    
+
+
+            <div class="footer_logo_rechts gap_mobile">
+
+                <a class="link_footer_logo_rechts" 
+                    href="https://www.facebook.com/">
+                    <img class="img_footer_logo_rechts social_logo_width" 
+                        src="../img/facebook_logo.png" 
+                        alt="Facebook">
+                </a>
+
+                <a class="link_footer_logo_rechts" 
+                    href="https://www.instagram.com/accounts/login/?hl=de">
+                    <img class="img_footer_logo_rechts social_logo_width" 
+                        src="../img/instagram_logo.png" 
+                        alt="Instagram">
+                </a>
+
+                <a class="link_footer_logo_rechts" 
+                href="https://x.com/">
+                <img class="img_footer_logo_rechts social_logo_width" 
+                    src="../img/x_logo.png" 
+                    alt="X">
+                </a>
+
+    
+        
+
+        </footer>
+
+    </div>
+
+</body>
+
+        <script src="./rezept_2.js"></script>
+        <script src="../alle_seiten/menu.js"></script>
+
+
+    
+
+</html>
